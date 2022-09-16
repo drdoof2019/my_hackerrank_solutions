@@ -1,0 +1,11 @@
+def countingSort(arr):
+    # Write your code here
+    result_arr = [0]*100
+    
+    # print(len(result_arr))
+    print(arr)
+    for element in arr:
+        result_arr[int(element)] += 1
+    
+    print(result_arr)
+    return result_arr

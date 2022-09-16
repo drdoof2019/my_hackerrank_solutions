@@ -1,0 +1,18 @@
+def diagonalDifference(arr):
+    # Write your code here
+    print(arr)
+    
+    first_diagonal = 0
+    second_diagonal = 0
+    length = len(arr)
+    print(length)
+    for i in range(length):
+        first_diagonal += arr[i][i]
+        print("arr[i][i]",arr[i][i])
+        print("arr[length-i-1][length-i-1]",arr[i][length-i-1])
+        second_diagonal += arr[i][length-i-1]
+    result = abs(first_diagonal-second_diagonal)
+    print("first_diagonal", first_diagonal)
+    print("second_diagonal", second_diagonal)
+    print("result", result)
+    return result
